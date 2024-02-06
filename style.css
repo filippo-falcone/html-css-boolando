@@ -16,12 +16,37 @@ ul {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* #endregion */
 
 /* #region TYPOGRAPHY */
+body {
+    font-family: sans-serif;
+}
+
 header {
-    font-size: 20px;
     font-weight: 700;
+}
+
+.card .like {
+    font-size: 25px;
+}
+
+.tag-container {
+    color: #ffffff;
+}
+
+.card:hover .like,
+.price {
+    color: #ff0000;
+}
+
+.price.old {
+    color: #000000;
+    text-decoration: line-through;
 }
 
 /* #endregion */
@@ -92,7 +117,6 @@ header {
 
 header .row {
     justify-content: space-between;
-    padding: 8px 0;
 }
 
 .header-left,
@@ -117,5 +141,63 @@ header ul>li {
 .logo img {
     max-width: 134px;
 }
+
+/* #endregion */
+
+/* #region MAIN */
+main>.container {
+    padding: 58px 0;
+}
+
+main .row-top {
+    margin: 0 0 54px;
+}
+
+/* ---------
+    CARD
+--------- */
+.card {
+    position: relative;
+}
+
+.card .like {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.tag-container {
+    width: 100%;
+    position: absolute;
+    bottom: 46px;
+}
+
+.tag {
+    padding: 8px;
+}
+
+.tag.sale {
+    background: #ff0000;
+}
+
+.tag.sostenibility {
+    background: #008000;
+}
+
+.card-image.secondary,
+.card:hover .card-image.primary {
+    display: none;
+}
+
+.card:hover .card-image.secondary {
+    padding: 0 0 4px;
+    display: block;
+}
+
 
 /* #endregion */
