@@ -8,9 +8,6 @@
 /* #endregion */
 
 /* #region GENERAL */
-header {
-    color: #ffffff;
-}
 
 ul {
     list-style: none;
@@ -27,16 +24,23 @@ body {
     font-family: sans-serif;
 }
 
+
+a,
+.tag-container,
+footer {
+    color: #ffffff;
+}
+
 header {
     font-weight: 700;
 }
 
-.card .like {
-    font-size: 25px;
+a {
+    text-decoration: none;
 }
 
-.tag-container {
-    color: #ffffff;
+.card .like {
+    font-size: 25px;
 }
 
 .card:hover .like,
@@ -47,6 +51,11 @@ header {
 .price.old {
     color: #000000;
     text-decoration: line-through;
+}
+
+.footer-left a,
+footer small {
+    font-size: 10px
 }
 
 /* #endregion */
@@ -210,5 +219,23 @@ main .row-top {
     display: block;
 }
 
+
+/* #endregion */
+
+/* #region FOOTER */
+footer {
+    background: #1a1a1a;
+    padding: 30px 10px;
+}
+
+footer>.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer ul>li {
+    display: inline-block;
+}
 
 /* #endregion */
