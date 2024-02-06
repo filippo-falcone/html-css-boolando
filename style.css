@@ -43,7 +43,7 @@ a {
     font-size: 25px;
 }
 
-.card:hover .like,
+.like:hover,
 .price {
     color: #ff0000;
 }
