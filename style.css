@@ -64,9 +64,11 @@ footer small {
 .container {
     max-width: 1200px;
     margin: auto;
+    padding: 0 10px;
 }
 
 .row {
+    margin: 0 -10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -165,11 +167,11 @@ header ul {
 /* #endregion */
 
 /* #region MAIN */
-main>.container {
+main {
     padding: 58px 0;
 }
 
-main .row-top {
+main .row-top .col-33 {
     margin: 0 0 54px;
 }
 
